@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int i' j;
+	int i , j;
 
-	i=48;
-	j=48;
+	i = 48;
+	j = 48;
 
 	while (j < 58)
 	{
@@ -28,7 +28,6 @@ int main(void)
 						break;
 					}
 					putchar(',');
-
 					putchar(' ');
 				}
 				i++;
