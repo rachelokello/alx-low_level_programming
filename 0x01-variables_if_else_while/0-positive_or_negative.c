@@ -1,16 +1,19 @@
 #include <stdio.h>
 int main()
 {
-	int n=1;
+	int n;
+
+	srand(time(0));
+	n=rand()-RAND_MAX / 2;
 	scanf("%d", &n:");
-	if(n>0){
+	if(n > 0){
 	printf("the number is positive: ");
 	}
-	else if(n=0){
+	else if(n == 0){
 		printf("the number is zero:");
 	}
-	else(n<0){
+	else(n < 0){
 		printf("the number is a negative:");
 		}
-return 0
+return (0)
 }
