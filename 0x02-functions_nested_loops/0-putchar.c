@@ -1,21 +1,21 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
- * main - prints _putchar followed by a newline
+ * main - Entry point
  *
- * Return: if runs successfully return 0
+ * Return: Always 0
  */
 int main(void)
 {
-	char str[] = {95, 112, 117, 116, 99, 104 97, 114};
-	int i;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		putchar(str[i]);
-	}
-	putchar('\n');
 	return (0);
 }
