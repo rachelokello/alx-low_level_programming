@@ -1,27 +1,21 @@
-/*
- * File: 0-main.c
- * Auth: Brennan D Baraban
- *
- */
-
+#include <stdio.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
- * main - entry point
+ * main - prints _putchar followed by a newline
  *
- * Return: always 0 (success)
+ * Return: if runs successfully return 0
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	char str[] = {95, 112, 117, 116, 99, 104 97, 114};
+	int i;
 
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		putchar(str[i]);
+	}
+	putchar('\n');
 	return (0);
 }
