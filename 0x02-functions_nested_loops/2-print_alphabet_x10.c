@@ -15,10 +15,10 @@ int main(void)
 		for (n = 'a'; n < = 'z'; n++)
 		{
 			_putchar(n);
+			co++;
+			_putchar('\n');
 		}
-		co++;
-		_putchar('\n');
-		return (0)
+		return (0);
 	}
-}
 
+		
