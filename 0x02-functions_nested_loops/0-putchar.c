@@ -1,4 +1,8 @@
-#include <stdio.h>
+/*
+ * File: 0-main.c
+ * Auth: Brennan D Baraban
+ *
+ */
 #include "main.h"
 /**
  * main - entry point
@@ -16,5 +20,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
