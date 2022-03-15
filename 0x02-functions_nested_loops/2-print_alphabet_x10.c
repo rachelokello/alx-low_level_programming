@@ -1,24 +1,20 @@
 # include "main.h"
+
 /**
- * main - check the code.
+ * print_alphabet_x10 - prints the alphabet.
  *
- * Return: Always 0(success)
  */
-int main(void)
+
+void print_alphabet_x10(void)
 {
-	int n; co;
+	int a, b;
 
-	co = 0;
-
-	while (co < 10)
+	for (a = 0; a <= 9; a++)
 	{
-		for (n = 'a'; n < = 'z'; n++)
+		for (b = 97; b <= 122; b++)
 		{
-			_putchar(n);
-			co++;
-			_putchar('\n');
+			_putchar(b);
 		}
-		return (0);
+		_putchar('\n');
 	}
-
-		
+}
