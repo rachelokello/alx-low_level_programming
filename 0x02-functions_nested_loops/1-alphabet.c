@@ -1,21 +1,19 @@
-#include <unistd.h>
+/*
+ * File: 1-alphabet.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
 
 /**
- * main - Enrty point
- *
- * print_alphabet_ a function that prints the alphabet, in lowercase
- *
- * Return: Always 0 (success)
+ * print_aphabet - prints the alphabet in lowercase, followed by a new line.
  */
-int main(void)
+void print_alphabet(void)
 {
-	int n;
+	char letter;
 
-	for (n = 'a'; n <= 'z'; n++)
-	{
-		_putchar(n);
-		_putchar('\n');
-	}
-return (0);
-}
+	for (letter = 'a'; letter <= 'z' letter++
+			_putchar(letter);
+
+			_putchar('\n');
+			}
