@@ -3,7 +3,7 @@
 /**
  * main - check the code
  *
- * return: always 0.
+ * return: always (0).
  */
 {
 	print_triangle(2);
