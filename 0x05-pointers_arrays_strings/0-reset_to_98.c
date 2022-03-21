@@ -1,20 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - prints a function pointer
+ * reset_to_98-updates the value it points to 98
+ * @n: pointer to n
  *
- * Return: always 0
+ * Return: void
  */
-void fun(int n)
+void reset_to_98(int *n)
 {
-	_putchar("value of n is %d\n", n);
-}
-int main(void)
-{
-	void (*fun_ptr)(int) = fun;
-
-	fun_ptr(98);
-
-	return (0);
+	*n = 98;
 }

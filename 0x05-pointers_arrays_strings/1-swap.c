@@ -1,5 +1,11 @@
+
 #include "main.h"
-#include <stdio.h>
+
+/**
+ * swap int - swaps the value of two integers
+ * @a:the first integer to be swapped.
+ * @b: the second integer to be swapped.
+ */
 
 void swap_int(int *a, int *b);
 {
@@ -7,13 +13,4 @@ void swap_int(int *a, int *b);
 	*a = *b;
 	*b = temp;
 }
-int main(void)
-{
-	int a, b;
 
-	_putchar("Enter value of a %d", &a);
-	_putchar("Enter value of b %d", &b);
-	swap(&a, &b);
-	return (0);
-
-}
