@@ -1,3 +1,8 @@
+/*
+ * file: 1-strncat.c
+ * auth: brennan D Baraban
+ */
+
 #include "main.h"
 
 /**
