@@ -6,25 +6,25 @@
  *
  * Return: a pointer to the encoded string
  */
-char *leet(char *str)
+char *leet(char *c)
 {
-	int i;
-	int j;
+	char *cp = c;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
+	unsigned int i;
 
-	char 1[] = "ol_ea_t";
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*c)
 	{
-		for (j = 0; 1[j] != '\0'; j++)
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		{
+			/*32 is the difference between lower case and upper case letters*/
+			if (*c == key[i] || *c == key[i] + 32)
+			{
+				*c = 48 + value[i];
+			}
+			}
+			c++;
+		}
 
-				{
-				if (s[i] == 1[j] || s[i] == (1[j] - 32))
-				{
-				s[i] = j + '0';
-				}
-				}
-				}
-				
-				return (s);
-				}
-
+		return (cp);
+	}
