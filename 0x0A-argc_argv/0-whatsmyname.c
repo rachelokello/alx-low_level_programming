@@ -5,7 +5,7 @@
  * @argv:array that contains the program command line arguments
  * Returns: 0 - success
  */
-int main(int argc _attribute _((unused)), char *argv[])
+int main(int argc_attribute_((unused)), char *argv[])
 {
 	printf("%s\n", argv[0]);
 	return (0);
