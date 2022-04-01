@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - prints its name, followed by a new line
+ * main - prints the name of the program
  * @argc: number of arguments passed to the function
- *@argv: argument vector of pointers to strings
+ * @argv: argument vector of pointers to strings
  *
- * Returns: 0 - success
+ * Return: always 0
  */
 int main(int argc_attribute_((unused)), char *argv[])
 {

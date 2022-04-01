@@ -1,9 +1,4 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
-int main(int argc_attribute_((unused)), char *argv[]);
-int main(int argc, char *argv[]_attribute_(unused));
-int main(int argc, char *argv[]);
-
-
-#endif /* MAIN_H */
+#endif 
