@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - prints its name, followed by a new line
- * @argc: number of command line arguments
- * @argv:array that contains the program command line arguments
+ * @argc: number of arguments passed to the function
+ *@argv: argument vector of pointers to strings
+ *
  * Returns: 0 - success
  */
 int main(int argc_attribute_((unused)), char *argv[])
