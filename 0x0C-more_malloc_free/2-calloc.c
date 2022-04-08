@@ -5,8 +5,8 @@
  * @nmemb: number of elements
  * @size: size of bytes
  *
- * Return: poinetr to the allocated memory
- * if nmemb or size is 0, return NULL
+ * Return: pointer to the allocated memeory
+ * if nmemb or size is 0, return NILL
  * if malloc fails, returns NULL
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -22,8 +22,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i < (nmemb * size); i++)
-		p[i] = 0;
+for (i = 0; i < (nmemb * size); i++)
+	p[i] = 0;
 
-	return (p);
+return (p);
 }
