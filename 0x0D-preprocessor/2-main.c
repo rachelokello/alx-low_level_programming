@@ -1,5 +1,6 @@
 /*
  * File: 2-main.c
+ * Auth: Rachel Okello
  */
 
 #include <stdio.h>
