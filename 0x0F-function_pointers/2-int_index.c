@@ -1,29 +1,26 @@
 #include "function_pointers.h"
 
 /**
- * int_index - ...
- * @array: ...
- * @size: ...
- * @cmp: ...
+ * int_index - searches for an integer
+ * @array: input uinteger array
+ * @size: size of the array
+ * @cmp: poineter to the function to be used to compare values
  *
- * Return: ...
+ * Return: index of the first element for which the cmp function does not return 0. if element matches return -1. if size <= 0, return -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0;
+	int i;
 
-	if (size > 0)
+	if (array && cmp)
 	{
-		if (array != NULL && cmp != NUL;L)
-		{
-			while (i < size)
-			{
-				if (cmp(array[i]))
-					return (i);
+		if (size <= 0)
+			return (-1);
 
-				i++;
-			}
-		}
+		for (i = 0; i < size; i++)
+			if (cmp(array[i]))
+				return (i);
 	}
+
 	return (-1);
 }
