@@ -1,39 +1,35 @@
-#include <stdio.h
+#include <stdio.h>
 /**
- * main - prints all possible combinations of two digits
+ * main - program that prints numbers from 0 to 99 without figure repeat.
  *
- * Return: if runs successfully return 0
+ * Return: 0
  */
+
 int main(void)
 {
-	int i , j;
+	int i, j;
 
-	i = 48;
-	j = 48;
+	i = 0;
+	j = 0;
 
-	while (j < 58)
+	while (i < 9)
 	{
-		i = 48;
-		while (j < 58)
+		j = i + 1;
+		while (j < 10)
 		{
-			i = 48;
-			while (i < 58)
+			putchar('0' + i);
+			putchar('0' + j);
+
+			if (i < 8 || j < 9)
 			{
-				if (j != i && j < i)
-				{
-					putchar(j);
-					putchar(i);
-					if (i == 57 && j == 56)
-					{
-						break;
-					}
-					putchar(',');
-					putchar(' ');
-				}
-				i++;
+				putchar(',');
+				putchar(' ');
 			}
 			j++;
 		}
-		putchar('\n');
-		return (0);
+		++i;
 	}
+	putchar('\n');
+
+	return (0);
+}

@@ -1,49 +1,43 @@
 #include <stdio.h>
+
 /**
- * main - prints all possible combinations of two-digit numbers.
+ * main - entry point
  *
- * Return: if runs successfully return 0
+ * Description: Print all possible combinations of two two-digit numbers
+ * Return: 0
  */
 int main(void)
 {
-	int i, e, g, h, kj1, kj2;
+	int x1;
+	int x2;
+	int y1;
+	int y2;
 
-	i = e = g = h = 48;
-	while (h < 58)
+	for (x1 = 0; x1 < 10; ++x1)
 	{
-		g = 48;
-		while (g < 58)
+		for (x2 = 0; x2 < 10; ++x2)
 		{
-			e = 48;
-			while (e < 58)
+			for (y1 = x1; y1 < 10; ++y1)
 			{
-				i = 48;
-				while (e < 58)
+				for (y2 = ((x1 == y1) ? (x2 + 1) : 0); y2 < 10; ++y2)
 				{
-					kj1 = (h * 10) + g;
-					kj2 = (e * 10) + i;
-					if (kj1 < kj2)
+					putchar('0' + x1);
+					putchar('0' + x2);
+					putchar(' ');
+					putchar('0' + y1);
+					putchar('0' + y2);
+
+					if (x1 != 9 || x2 != 8 ||
+							y1 != 9 || y2 != 9)
 					{
-						putchar(h);
-						putchar(g);
+						putchar(',');
 						putchar(' ');
-		putchar(e);
-		putchar(i);
-		if (h == 57 && g == 56 && e == 57 && i == 57)
-			break;
-		putchar(',');
-		putchar(' ');
 					}
-					i++;
 				}
-				e++;
 			}
-			g++;
 		}
-		h++;
 	}
 	putchar('\n');
+
 	return (0);
 }
-
-	

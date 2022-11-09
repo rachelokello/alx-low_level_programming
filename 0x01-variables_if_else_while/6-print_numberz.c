@@ -1,20 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - prints all single digit numbers of base 10 from 0.
+ * main -Print all single digit numbers starting from 0
  *
- * Return: if runs successfuly return 0
+ * Description: using the main function
+ * this program prints "Print all single digit numbers starting from 0
+ * Return: 0
  */
 int main(void)
 {
 	int i;
 
 	for (i = 48; i < 58; i++)
-	{
 		putchar(i);
-	}
 	putchar('\n');
 	return (0);
 }
-

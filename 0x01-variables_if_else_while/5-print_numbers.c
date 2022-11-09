@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main - prints all single digit numbers of base 10 from 0
+ * main -Prints all single digit numbers starting from 0
  *
- * Return: if run successfully return 0
+ * Description: using the main function
+ * this program prints "Prints all single digit numbers starting from 0
+ * Return: 0
  */
 int main(void)
 {
@@ -10,8 +12,8 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		printf("%d", i);
+		printf("%i", i);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }

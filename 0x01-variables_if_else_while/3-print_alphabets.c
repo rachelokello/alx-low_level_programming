@@ -1,21 +1,22 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
- * main - prints alphabets in lowercase and uppercase.
+ * main -Prints the alphabet in lowercase, and then in uppercase
  *
- * Return: if runs successfully return 0
+ * Description: using the main function
+ * this program prints "Prints the alphabet in lowercase, and then in uppercase
+ * Return: 0
  */
 int main(void)
 {
-	char i;
+	char ch;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
-		putchar(i);
+		putchar(ch);
 	}
-	for (i = 'A'; i <= 'Z'; i++)
+	for (ch = 'A' ; ch <= 'Z' ; ch++)
 	{
-	putchar(i);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);

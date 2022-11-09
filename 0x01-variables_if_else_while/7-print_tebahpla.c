@@ -1,17 +1,18 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
- * main - prints alphabet in lowercase in reverse
+ * main -Prints the lowercase alphabet in reverse
  *
- * Return: if runs successfully return 0
+ * Description: using the main function
+ * this program prints "Prints the lowercase alphabet in reverse
+ * Return: 0
  */
 int main(void)
 {
-	char i;
+	char c;
 
-	for (i = 'z'; i >= 'a'; i--)
+	for (c = 'z'; c >= 'a'; c--)
 	{
-		putchar(i);
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
